@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Looking for a Web Designer? My name on the net is JADICODE, I specialize in HTML, CSS and JAVASCRIPT. I measure the accessibility of your pages carefully. I am a front-end developer. I use various frameworks such as: ParcelJS and ReactJS. I make notable use of Docker.">
+    <meta name="keywords" content="jadicode, web design, web designer, web development">
+    <meta name="author" content="Javier Díaz Fernández">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--ICONO NAVEGADOR-->
+    <link rel="icon" type="image/jpg" href="img/logos/icon.png">
+    <!--FUENTE GENERAL-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+    <!--ARCHIVOS CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contactform.css">
+    <link rel="stylesheet" href="css/cookiestyle.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D3Y9EXRRXJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D3Y9EXRRXJ');
+    </script>
+    <title>Jadicode</title>
+</head>
+
+<body>
+    <div class="lineargradient"></div>
+    <header class="header-outer">
+        <div class="header-inner responsive-wrapper">
+            <div class="header-logo">
+                <a href="https://www.jadicode.es/"><img src="img/logos/jadicodelogo.png" width="180"></a>
+            </div>
+            <nav class="header-navigation">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html"><i class="fas fa-address-card"></i> About me</a>
+                <a href="projects.html"><i class="fas fa-rocket"></i> Projects</a>
+                <a href="contact.html"><i class="fas fa-id-badge"></i> Contact</a>
+            </nav>
+            <div class="responsivemenu">
+                <a href="index.html"><i class="fas fa-home" id="iconohome"></i></a>
+                <a href="about.html"><i class="fas fa-address-card"></i></a>
+                <a href="projects.html"><i class="fas fa-rocket"></i></a>
+                <a href="contact.html"><i class="fas fa-id-badge"></i></a>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="insercion">
+        <div class="container" id="formscroll">
+            <span class="big-circle"></span>
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Know more about me</h3>
+                    <p class="text">
+                        This form is for the sole and exclusive use of employment, hiring, jobs and orders. Any email not related to the aforementioned will be automatically blocked.
+                    </p>
+
+                    <div class="info">
+                        <div class="information">
+                            <i class="fas fa-envelope icon"></i>
+                            <p> Mail: contacto@jadicode.es</p>
+                        </div>
+
+                    </div>
+
+                    <div class="social-media">
+                        <p>Social media:</p>
+                        <div class="social-icons">
+                            <a href="https://twitter.com/jadicode">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com/jadicode">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/jadicode">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+
+                    <form id="formulario" method="POST" action="php/enviar.php" autocomplete="off" onsubmit="return validar();">
+                        <h3 class="title">Contact me</h3>
+                        <div class="input-container">
+                            <input type="text" name="nombre" class="input" />
+                            <label for="">Name and Surname</label>
+                            <span>Name and Surname</span>
+                        </div>
+                        <p id="errornombre"></p>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input" />
+                            <label for="">E-mail</label>
+                            <span>E-mail</span>
+                        </div>
+                        <p id="errormail"></p>
+                        <div class="input-container textarea">
+                            <textarea name="mensaje" class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <p id="errormensaje"></p>
+                        <input type="submit" value="Submit" class="botoncontacto" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="redessociales">
+            <p class="centrado">
+                <a href="https://twitter.com/jadicode"><i class="fab fa-twitter" id="idtwitter"></i></a>
+                <a href="https://instagram.com/jadicode"><i class="fab fa-instagram" id="idinstagram"></i></a>
+                <a href="https://github.com/jadicode"><i class="fab fa-github" id="idgithub"></i></a>
+            </p>
+            <br>
+            <p class="title">© Copyright © 2020-2021 JADICODE. All rigths reserved.</p>
+            <br>
+            <img src="img/logos/logo.png" alt="jadicodelogo" width="50">
+    </footer>
+    <div class="cookie">
+        <h3 class="h3cookie">COOKIE MESSAGE <i class="fas fa-cookie"></i></h3>
+        <p class="pcookie">
+            <strong>Jadicode.es</strong> use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners
+            who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.
+        </p>
+
+        <button class="cookiebutton">
+            Ok, I Understand.
+        </button>
+    </div>
+
+    <script src="scripts/cookie.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/async.js"></script>
+    <script src="scripts/contactform.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/scripts/scroll.js"></script>
+</body>
+
+</html>

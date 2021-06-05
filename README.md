@@ -4,7 +4,7 @@
 ## How to launch:
 - VS Code live server extension.
 - Upload to a server for seeing all features working.
--
+
 ## Features:
 - HTML & CSS structure.
 - JavaScript validation.
